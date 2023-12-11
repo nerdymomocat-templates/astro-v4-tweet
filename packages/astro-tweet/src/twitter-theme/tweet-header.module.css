@@ -39,13 +39,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
+  min-height: 0;
 }
 .authorLink {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
+  flex-shrink: 1
 }
 .authorLink:hover {
   text-decoration-line: underline;
@@ -58,18 +60,22 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  flex-shrink: 1;
 }
 
 .authorMeta {
   display: flex;
+  flex-shrink: 1;
 }
 .authorFollow {
   display: flex;
+  flex-shrink: 1;
 }
 .username {
   color: var(--tweet-font-color-secondary);
   text-decoration: none;
   text-overflow: ellipsis;
+  flex-shrink: 1;
 }
 .follow {
   color: var(--tweet-color-blue-secondary);
