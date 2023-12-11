@@ -40,7 +40,7 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 0.3rem;
-  min-height: 0;
+  min-width: 0;
 }
 .authorLink {
   text-decoration: none;
