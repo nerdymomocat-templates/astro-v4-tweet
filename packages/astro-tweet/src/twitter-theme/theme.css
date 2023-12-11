@@ -2,28 +2,28 @@
   --tweet-container-margin: 0rem;
 
   /* Header */
-  --tweet-header-font-size: 0.9375rem;
+  --tweet-header-font-size: 0.90rem;
   --tweet-header-line-height: 1.25rem;
 
   /* Text */
-  --tweet-body-font-size: 1rem;
+  --tweet-body-font-size: 0.90rem;
   --tweet-body-font-weight: 400;
   --tweet-body-line-height: 1.5rem;
   --tweet-body-margin: 0;
 
   /* Quoted Tweet */
   --tweet-quoted-container-margin: 0.75rem 0;
-  --tweet-quoted-body-font-size: 0.938rem;
+  --tweet-quoted-body-font-size: 0.85rem;
   --tweet-quoted-body-font-weight: 400;
   --tweet-quoted-body-line-height: 1.25rem;
   --tweet-quoted-body-margin: 0.25rem 0 0.75rem 0;
 
   /* Info */
-  --tweet-info-font-size: 0.9375rem;
+  --tweet-info-font-size: 0.85rem;
   --tweet-info-line-height: 1.25rem;
 
   /* Actions like the like, reply and copy buttons */
-  --tweet-actions-font-size: 0.875rem;
+  --tweet-actions-font-size: 0.80rem;
   --tweet-actions-line-height: 1rem;
   --tweet-actions-font-weight: 700;
   --tweet-actions-icon-size: 1.25em;
@@ -32,7 +32,7 @@
   );
 
   /* Reply button */
-  --tweet-replies-font-size: 0.875rem;
+  --tweet-replies-font-size: 0.80rem;
   --tweet-replies-line-height: 1rem;
   --tweet-replies-font-weight: 700;
 }
