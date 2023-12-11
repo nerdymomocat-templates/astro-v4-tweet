@@ -40,14 +40,13 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 0.3rem;
-  min-width: 0;
+  font-size: small;
 }
 .authorLink {
   text-decoration: none;
   color: inherit;
   display: flex;
   align-items: center;
-  flex-shrink: 1
 }
 .authorLink:hover {
   text-decoration-line: underline;
@@ -56,31 +55,31 @@
   display: inline-flex;
 }
 .authorLinkText {
-  font-weight: 700;
+  font-weight: bold;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
-  flex-shrink: 1;
+  white-space: pre-wrap;
 }
 
 .authorMeta {
   display: flex;
-  flex-shrink: 1;
 }
 .authorFollow {
   display: flex;
-  flex-shrink: 1;
 }
 .username {
   color: var(--tweet-font-color-secondary);
   text-decoration: none;
   text-overflow: ellipsis;
-  flex-shrink: 1;
+  font-size: smaller;
+  word-break: break-all;
+  white-space: normal;
 }
 .follow {
   color: var(--tweet-color-blue-secondary);
   text-decoration: none;
   font-weight: 700;
+  font-size: x-small;
 }
 .follow:hover {
   text-decoration-line: underline;
@@ -91,6 +90,11 @@
 
 .brand {
   margin-inline-start: auto;
+}
+@media (max-width: 400px) {
+  .brand {
+    display: none;
+  }
 }
 
 .twitterIcon {
