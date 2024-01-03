@@ -24,7 +24,7 @@ const { tweet } = Astro.props;
         default:
           // We use `dangerouslySetInnerHTML` to preserve the text encoding.
           // https://github.com/vercel-labs/react-tweet/issues/29
-          return <span set:html={item.text} />;
+          return <span set:html={item.text}/>;
       }
     })
   }

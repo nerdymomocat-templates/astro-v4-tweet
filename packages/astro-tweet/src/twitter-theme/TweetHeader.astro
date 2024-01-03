@@ -61,7 +61,7 @@ const { user } = tweet;
       >
         <span title={`@${user.screen_name}`}>@{user.screen_name}</span>
       </a>
-      <div class={styles.authorFollow}>
+      <div class={styles.authorFollow} data-pagefind-ignore="all">
         <span class={styles.separator}>·</span>
         <a
           href={user.follow_url}
