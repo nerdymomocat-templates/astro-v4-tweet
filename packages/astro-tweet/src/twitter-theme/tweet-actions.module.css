@@ -12,7 +12,8 @@
 
 .like,
 .reply,
-.copy {
+.copy,
+.read {
   text-decoration: none;
   color: inherit;
   display: flex;
@@ -21,7 +22,8 @@
 }
 .like:hover,
 .reply:hover,
-.copy:hover {
+.copy:hover,
+.read:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 .like:hover > .likeIconWrapper {
@@ -33,7 +35,8 @@
 }
 .likeIconWrapper,
 .replyIconWrapper,
-.copyIconWrapper {
+.copyIconWrapper, 
+.readIconWrapper {
   width: var(--tweet-actions-icon-wrapper-size);
   height: var(--tweet-actions-icon-wrapper-size);
   display: flex;
@@ -44,7 +47,8 @@
 }
 .likeIcon,
 .replyIcon,
-.copyIcon {
+.copyIcon,
+.readIcon {
   height: var(--tweet-actions-icon-size);
   fill: currentColor;
   user-select: none;
@@ -54,7 +58,8 @@
 }
 .likeCount,
 .replyText,
-.copyText {
+.copyText,
+.readText {
   font-size: var(--tweet-actions-font-size);
   font-weight: var(--tweet-actions-font-weight);
   line-height: var(--tweet-actions-line-height);
@@ -70,6 +75,17 @@
 }
 .replyIcon {
   color: var(--tweet-color-blue-primary);
+}
+
+.read:hover > .readIconWrapper {
+  background-color: var(--tweet-color-green-primary-hover);
+}
+.read:hover > .readText {
+  color: var(--tweet-color-green-primary);
+  text-decoration-line: underline;
+}
+.readIcon {
+  color: var(--tweet-color-green-primary);
 }
 
 .copy {

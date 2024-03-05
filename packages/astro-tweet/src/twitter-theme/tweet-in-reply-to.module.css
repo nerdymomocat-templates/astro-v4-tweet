@@ -1,8 +1,8 @@
 .root {
   text-decoration: none;
   color: var(--tweet-font-color-secondary);
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
   margin-bottom: 0.25rem;
   overflow-wrap: break-word;
   white-space: pre-wrap;

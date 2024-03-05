@@ -8,7 +8,7 @@ import TweetBody from "./TweetBody.astro";
 import TweetMedia from "./TweetMedia.astro";
 import TweetInfo from "./TweetInfo.astro";
 import TweetActions from "./TweetActions.astro";
-import TweetReplies from "./TweetReplies.astro";
+// import TweetReplies from "./TweetReplies.astro";
 import QuotedTweet from "./quoted-tweet/QuotedTweet.astro";
 import { enrichTweet } from "../utils.js";
 
@@ -33,5 +33,5 @@ const tweet = enrichTweet(t);
   {tweet.quoted_tweet && <QuotedTweet tweet={tweet.quoted_tweet} />}
   <TweetInfo tweet={tweet} />
   <TweetActions tweet={tweet} />
-  <TweetReplies tweet={tweet} />
+  <!-- <TweetReplies tweet={tweet} /> -->
 </TweetContainer>
