@@ -10,6 +10,8 @@ interface Props {
   onError?: ((error: any) => any) | undefined;
 }
 
+let TWEET_TOMBSTONE = "TweetTombstone"
+
 const { id, components, fetchOptions, onError } = Astro.props;
 let error;
 const tweet = id
@@ -22,19 +24,12 @@ const tweet = id
       }
     })
   : undefined;
-let tweetNotFound = false;
-// TODO: typing
-let NotFound: any;
-if (!tweet) {
-  NotFound = components?.TweetNotFound || TweetNotFound;
-  tweetNotFound = true;
-}
 ---
 
 {
-  tweetNotFound ? (
-    <NotFound error={error} />
-  ) : (
+  tweet && tweet.__typename!= TWEET_TOMBSTONE? (
     <EmbeddedTweet tweet={tweet!} components={components} />
+  ) : (
+   null
   )
 }
